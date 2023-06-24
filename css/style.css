@@ -66,7 +66,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  padding: 15px 0;
+  /* padding: 15px 0; */
   transition: all 0.5s;
   z-index: 997;
 }
@@ -77,8 +77,9 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 67px;
   margin-right: 6px;
+  padding: 10px;
 }
 
 .header .logo h1 {
@@ -305,6 +306,22 @@ section {
 # Mobile Navigation
 --------------------------------------------------------------*/
 @media (max-width: 900px) {
+  .footer .footer-content h4::after {
+   
+    text-align: center;
+   position: relative !important;
+    margin: 10px auto ;
+   
+}
+  .footer .col-lg-4{
+    text-align: center;
+  }
+  .footer .col-lg-4 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .navbar {
     position: fixed;
     top: 0;
