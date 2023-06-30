@@ -863,6 +863,8 @@ section {
 }
 
 @media (max-width: 991px) {
+  .services .details {
+    height: max-content;}
   .hero-animated .animated {
     max-width: 60%;
   }
@@ -1297,6 +1299,7 @@ section {
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+
   
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -1346,7 +1349,7 @@ section.serv{
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 2rem;
+  padding: 1.5rem;
   height: 500px;
 
 }
@@ -1357,7 +1360,7 @@ section.serv{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #00000090;
+  background-color: #000000d1;
   color: var(--color-white);
 }
 .about .col-md-6 .img-bx{
