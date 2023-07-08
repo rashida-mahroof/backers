@@ -1256,6 +1256,16 @@ section {
 }
 
 @media (max-width: 768px) {
+  #services .img-b {
+    
+    display: flex;
+    height: 300px;
+    margin-bottom: 1rem;
+    justify-content: center !important;
+    align-items: center;}
+    #services .img-bx img{
+      height: 50%;
+    }
   section {
     padding: 30px 0;
 
