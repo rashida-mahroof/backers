@@ -34,7 +34,7 @@ a {
   h1,
   h2,
   h3,
-  h4,
+ 
   h5,
   h6 {
     color: var(--color-primary) !important;
@@ -47,7 +47,36 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
+#services .about-bx{
+  height: 600px;
+  margin-bottom: 10px;
+}
 
+#services .img-b{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+#services .img-b img{
+ 
+  /* height: 100%; */
+  object-fit: cover;
+}
+#services:nth-child(2) .img-b img{
+  /* height: 80%; */
+}
+#services h4{
+  margin-bottom: 15px;
+  color: #666666 !important;font-size: 17px
+}
+#services h3{
+  font-size: 20px;
+}
+
+#services p{
+  font-size: 14px;
+  color: #201e1e;
+}
 .section-header {
   text-align: center;
   padding-bottom: 40px;
@@ -326,10 +355,10 @@ section {
   .about .rev{
     flex-direction: column-reverse;
   }
-  .hero-animated .flex-column{
+  /* .hero-animated .flex-column{
     align-items: start;
     text-align: start;
-  }
+  } */
   .section-header h2 {
     font-size: 33px;
     
@@ -376,6 +405,7 @@ section {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    margin-top: 20rem;
   }
 
   .navbar a,
@@ -830,31 +860,19 @@ section {
 --------------------------------------------------------------*/
 .hero-animated {
   width: 100%;
-  height: 100vh;
   min-height: 50vh;
-  background: url("../images/bann.jpg") center center;
+  background: url("../img/hero-bg.png") center center;
   background-size: cover;
   position: relative;
-  margin-bottom: 6rem;
-  /* padding: 120px 0 60px; */
+  padding: 120px 0 60px;
 }
-.hero-animated .overlay{
-  width: 100%;
-  height: 100%;
-  background-color: #100f0fa5;
- display: flex;
- justify-content: center;
 
-}
-.hero-animated h6{
-  color: #fff !important;
-}
 .hero-animated h2 {
-  width: 60%;
   margin: 0 0 10px 0;
-  font-size: 45px;
-  font-weight: 500;
-  color: #eee !important;
+  text-align: start;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-secondary);
   font-family: var(--font-secondary);
 }
 
@@ -863,7 +881,8 @@ section {
 }
 
 .hero-animated p {
-  color:#fff !important;
+  text-align: start;
+  color: rgba(var(--color-secondary-rgb), 0.8);
   margin: 0 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -881,13 +900,12 @@ section {
 }
 
 @media (max-width: 991px) {
-  .services .details {
-    height: max-content;}
   .hero-animated .animated {
     max-width: 60%;
   }
-  .hero-animated h2 {
-     width: unset;}
+  .hero-animated .container{
+    flex-direction: column-reverse !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -919,16 +937,21 @@ section {
 @media (max-width: 640px) {
   .hero-animated h2 {
     font-size: 32px;
+    text-align: center;
   }
 
   .hero-animated p {
     font-size: 18px;
     margin-bottom: 30px;
+    text-align: center;
   }
-
+.hero-animated .ce{
+  text-align: center !important;
+}
   .hero-animated .btn-get-started,
   .hero-animated .btn-watch-video {
     font-size: 14px;
+    text-align: center !important;
   }
 }
 
@@ -1053,6 +1076,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+}
   .onfocus .content {
     padding: 80px;
   }
@@ -1229,6 +1256,12 @@ section {
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 30px 0;
+
+}
+.services .details {
+  height: max-content;}
   .about h3 {
     font-size: 28px;
   }
@@ -1383,12 +1416,17 @@ section.serv{
 }
 .about .col-md-6 .img-bx{
   width: 100%;
-  height: 300px;
+  height: 284px;
   overflow: hidden;
+  /* box-shadow: 1px 2px 10px 1px #ddd; */
+}
+.about-bx{
   box-shadow: 1px 2px 10px 1px #ddd;
+  padding: 1rem;
+  
 }
 .about .col-md-6 .img-bx img{
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 
