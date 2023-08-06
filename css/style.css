@@ -6,11 +6,20 @@
     box-sizing: border-box;
 }
 body{
+ /* margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #434343 !important;
+  background-image: linear-gradient(#434343, #282828);
+  background-size: 77px 38px;
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+ */
 
-
-    background-image: linear-gradient(to right, #424242 1px,#231f20 1px), 
-    linear-gradient(to bottom, #ffffff00 1px,#ffffff 1px);
-    background-size: 18px 20px;
+    background-image: linear-gradient(to right, #424242 1px,transparent 1px), 
+    linear-gradient(to bottom, #424242 1px,#231f20 1px);
+    background-size: 38px 20px;
 }
 :root{
     --color-primary:#3bb2e8;
