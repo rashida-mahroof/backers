@@ -6,13 +6,17 @@
     box-sizing: border-box;
 }
 body{
-  color:#201e1e;
+
+
+    background-image: linear-gradient(to right, #424242 1px,#231f20 1px), 
+    linear-gradient(to bottom, #ffffff00 1px,#ffffff 1px);
+    background-size: 18px 20px;
 }
 :root{
     --color-primary:#3bb2e8;
     --color-secondary:#2e405e;
     --color-white:#fff;
-    --dark-color:#6b6a6a;
+    --dark-color:#cfcfcf;
     --font-primary:'Belanosima', sans-serif;
     --font-secondary:'Roboto', sans-serif;
 
@@ -49,6 +53,7 @@ section {
 }
 #services .about-bx{
   height: 600px;
+  background-color: #ffffff26;
   margin-bottom: 10px;
 }
 
@@ -67,7 +72,7 @@ section {
 }
 #services h4{
   margin-bottom: 15px;
-  color: #666666 !important;font-size: 17px
+  color: #979797  !important;font-size: 17px
 }
 #services h3{
   font-size: 20px;
@@ -82,7 +87,7 @@ section {
   padding-bottom: 40px;
 }
 .fixed-top{
-  background-color: #fffffffa;
+  background-color: #ffffff24;
 }
 .section-header h2 {
   font-size: 40px;
@@ -111,8 +116,8 @@ section {
 }
 
 .header.sticked {
-  background: var(--color-white);
-  box-shadow: 0px 2px 20px #ddd;
+  background: #151617a8;
+  box-shadow: 0px 2px 20px #4444449f;
 }
 
 .header .logo img {
@@ -192,7 +197,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 400;
-    color: var(--color-secondary);
+    color: var(--color-white);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -401,7 +406,7 @@ section {
     inset: unset;
     padding: 10px 0;
     margin-top: 10rem;
-    background: var(--color-secondary);
+    /* background: var(--color-secondary); */
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -452,7 +457,7 @@ section {
 
   .mobile-nav-toggle {
     display: block !important;
-    color: var(--color-secondary);
+    color: var(--dark-color);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -481,7 +486,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: var(--color-secondary);
+    background:#333435;
     z-index: 9996;
   }
 }
@@ -542,6 +547,7 @@ section {
 
 .services .details p {
   line-height: 24px;
+  color: #595959  !important;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -576,6 +582,7 @@ section {
   }
   
   .contact .info {
+    background-color: #ffffff4f;
     padding: 40px;
     box-shadow: 0px 2px 15px #ccc;
     overflow: hidden;
@@ -622,7 +629,7 @@ section {
   
   .contact .php-email-form {
     width: 100%;
-    background: var(--color-white);
+    background:unset;
   }
   
   .contact .php-email-form .form-group {
@@ -727,7 +734,7 @@ section {
   }
   
   .footer .footer-content {
-    background: var(--color-secondary);
+    background: #2e405e9e;
     padding: 60px 0 30px 0;
   }
   
